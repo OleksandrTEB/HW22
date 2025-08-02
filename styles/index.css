@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+  user-select: none;
+  color: white;
+}
+
+body {
+  height: 100wh;
+  background-color: black;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.container header {
+  border-bottom: 1px solid #757070;
+  margin-bottom: 2rem;
+}
+.container header .logo img {
+  object-fit: cover;
+  width: 15rem;
+  height: 5rem;
+}
+.container main {
+  width: 98%;
+  margin: 0 auto;
+}
+.container main .main-content {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+}
+.container main .main-content .agenc {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  background-color: gray;
+  width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px gray;
+  height: 165px;
+}
+.container main .main-content .agenc .selc select {
+  background-color: #201d1d;
+  padding: 5px 30px;
+  border-radius: 10px;
+}
+.container main .main-content .agenc .selc select:hover {
+  border: 1px solid white;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+.container main .main-content .agenc .wis {
+  background-color: #201d1d;
+  padding: 8px 0;
+  border-radius: 50px;
+  width: 110px;
+}
+.container main .main-content .agenc .wis:hover {
+  border: 1px solid white;
+  padding: 7px 0;
+  cursor: pointer;
+}
+.container main .main-content .agenc .wis:active {
+  background-color: #090909;
+}
+.container main .main-content .person-container {
+  width: 100%;
+}
+.container main .main-content .person-container .logo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.container main .main-content .person-container .person-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 1300px) {
+  .container main .main-content .person-container .person-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .container main .main-content .person-container .person-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 780px) {
+  .container main .main-content .person-container .person-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container main .main-content .person-container .person-cards .person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 1rem;
+  background-color: gray;
+  border-radius: 20px;
+  width: 200px;
+}
+.container main .main-content .person-container .person-cards .person-card img {
+  object-fit: cover;
+  width: 10rem;
+  height: 11rem;
+  border-radius: 5px;
+}
+.container main .main-content .person-container .person-cards .person-card .detalis:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
